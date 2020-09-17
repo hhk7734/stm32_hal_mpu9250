@@ -542,7 +542,6 @@ HAL_StatusTypeDef Mpu9250::reset_ak8963(void) {
 }
 
 HAL_StatusTypeDef Mpu9250::get_ak8963_sensitivity(void) {
-    uint8_t           _mode = ak8963_mode;
     HAL_StatusTypeDef status;
 
     status = set_ak8963_mode(AK8963_POWER_DOWN_MODE);
