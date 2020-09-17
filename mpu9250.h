@@ -27,12 +27,6 @@
 #include "main.h"
 #include "mpu9250_reg_map.h"
 
-#include <stdbool.h>
-#include <stdint.h>
-
-#define SPI_READ_REG  0x80
-#define SPI_WRITE_REG 0x00
-
 namespace lot {
 class Mpu9250 {
 public:

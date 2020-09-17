@@ -25,10 +25,11 @@
 #include "mpu9250.h"
 
 #include <math.h>
-#include <stdio.h>
 
 namespace lot {
-static const int16_t ACC_1G_FS = 4096 - 1;
+static const uint8_t SPI_READ_REG  = 0x80;
+static const uint8_t SPI_WRITE_REG = 0x00;
+static const int16_t ACC_1G_FS     = 4096 - 1;
 
 Mpu9250::Mpu9250(SPI_HandleTypeDef *hspi,
                  GPIO_TypeDef *     GPIOx,
